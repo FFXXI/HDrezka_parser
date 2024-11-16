@@ -25,7 +25,7 @@ def parse_quality(urls, quality=None):
     if intext_quality not in urls:
         print('Качества {} нет в списке доступных'.format(quality))
 
-        # тут уже я не выдержал и импортировал регекс
+        # тут  я импортировал регекс
         available_qualities = re.findall(r'\[(.+?)\]', urls)
         print('Доступные варианты: ', ', '.join(available_qualities))
         return None
